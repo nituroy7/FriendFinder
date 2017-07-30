@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+
+<body>
+
+<style>
+  .text1 {font-weight:bold ;}
+
+
+</style>
+    <div class="container">
+        <h2 class="text"> Survey Questions </h2>
+        <hr>
+        <h3 class="text" ><b>About You</b></h3>
+    
+        <div class="form-group">
+            <label for="name"><h4>Name(required)</h4></label>
+            <input type="text" class="form-control" id="name">
+        </div>
+        <div class="form-group">
+            <label for="photo"><h4>Link to Photo Image (Required)<h4></label>
+            <input type="text" class="form-control" id="photo">
+        </div>
+        <hr>
+        <h3 class="text1">Question 1</h3>
+        <h4 class="text">Your mind is always buzzing with unexplored ideas and plans.</h4>
+        <select>
+            <option>Select an Option</option>
+            <option>1 (stronly disagree)</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5 (stronly disagree)</option>
+        </select>
+
+        <h3 class="text1">Question 2</h3>
+        <h4 class="text">Generally speaking, you rely more on your experience than your imagination.</h4>
+        <select>
+            <option>Select an Option</option>
+            <option>1 (stronly disagree)</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5 (stronly disagree)</option>
+        </select>
+
+        <h3 class="text1">Question 3</h3>
+        <h4 class="text">You find it easy to stay relaxed and focused even when there is some pressure.</h4>
+        <select>
+            <option>Select an Option</option>
+            <option>1 (stronly disagree)</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5 (stronly disagree)</option>
+        </select>
+
+        <h3 class="text1">Question 4</h3>
+        <h4 class="text">You rarely do something just out of sheer curiosity.</h4>
+        <select>
+            <option>Select an Option</option>
+            <option>1 (stronly disagree)</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5 (stronly disagree)</option>
+        </select>
+
+        <h3 class="text1">Question 5</h3>
+        <h4 class="text">People can rarely upset you.</h4>
+        <select>
+            <option>Select an Option</option>
+            <option>1 (stronly disagree)</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5 (stronly disagree)</option>
+        </select>
+
+        <h3 class="text1">Question 6</h3>
+        <h4 class="text">It is often difficult for you to relate to other people’s feelings.</h4>
+        <select>
+            <option>Select an Option</option>
+            <option>1 (stronly disagree)</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5 (stronly disagree)</option>
+        </select>
+
+        <h3 class="text1">Question 7</h3>
+        <h4 class="text">In a discussion, truth should be more important than people’s sensitivities.</h4>
+        <select>
+            <option>Select an Option</option>
+            <option>1 (stronly disagree)</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5 (stronly disagree)</option>
+        </select>
+
+        <h3 class="text1">Question 8</h3>
+        <h4 class="text">You rarely get carried away by fantasies and ideas.</h4>
+        <select>
+            <option>Select an Option</option>
+            <option>1 (stronly disagree)</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5 (stronly disagree)</option>
+        </select>
+
+        <h3 class="text1">Question 9</h3>
+        <h4 class="text">You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h4>
+        <select>
+            <option>Select an Option</option>
+            <option>1 (stronly disagree)</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5 (stronly disagree)</option>
+        </select>
+
+        <h3 class="text1">Question 10</h3>
+        <h4 class="text">You feel more energetic after spending time with a group of people.</h4>
+        <select id ="select">
+            <option>Select an Option</option>
+            <option>1 (stronly disagree)</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5 (stronly disagree)</option>
+        </select>
+        <br><br>
+
+        <button type="submit" class="btn btn-primary submit" style="width: 85% ; height: 20% ; font-size:20px" id="add-btn">Submit</button>
+        <br>
+        <hr>
+
+
+        <script type="text/javascript">
+    // Question: What does this code do?
+    // $("#add-btn").on("click", function(event) {
+    //   event.preventDefault();
+    //   var newCharacter = {
+    //     name: $("#name").val().trim(),
+    //     photo: $("#role").val().trim(),
+    //     answers: $("#answer").val().trim(),
+    //     forcePoints: $("#force-points").val().trim()
+    //   };
+
+    //   // Question: What does this code do??
+    //   $.post("/api/survey")
+    //   .done(function(data) {
+    //     console.log(data);
+    //     alert("Adding friend...");
+    //   });
+    // });
+  </script>
+
+        <footer class="footer">
+            <div class="container">
+                <p><a href="/api/survey">API Friend List</a> | <a href="https://github.com/nitu/Friend-Finder">GitHub Repo</a></p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
