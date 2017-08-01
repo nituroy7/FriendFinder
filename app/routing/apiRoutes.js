@@ -29,6 +29,7 @@ module.exports = function(app) {
     // It will do this by sending out the value "true" have a table
    
       friendsData.push(req.body);
+      console.log(friendsData);
       res.json(true);
     
   });
